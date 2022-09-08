@@ -108,6 +108,62 @@
   margin-left: 0.5rem;
 }
 
+/* CSS for cards */
+.wrap{
+  display:flex;
+  position:relative;
+  justify-content: center;
+}
+.card{
+  height:120px;
+  width:80px;
+  background:blue;
+  border:1px solid black;
+  border-radius:5px;
+  position:relative;
+  top:30px;
+  transition: transform .2s;
+}
+.card:nth-child(1) {
+transform: translateY(0px) rotate(-12deg);
+left: 87px;
+top: 52px;
+}
+.card:nth-child(2) {
+    transform: translateY(0px) rotate(4deg);
+    left: 102px;
+    top: -60px;
+}
+.card:nth-child(3) {
+    transform: translateY(0px) rotate(14deg);
+    left: 7px;
+    top: 26px;
+ }
+.card:nth-child(4) {
+    transform: translateY(0px) rotate(31deg);
+    left: -24px;
+    top: 24px;  
+}
+.card:nth-child(1):hover{
+z-index:2;
+  transform: translate(-20px) rotate(-42deg) scale(1);
+}
+
+.card:nth-child(2):hover{
+z-index:2;
+  transform: translateY(-20px) rotate(-26deg) scale(1);
+}
+.card:nth-child(3):hover{
+z-index:2;
+  transform: translate(1px , -20px) rotate(-16deg) scale(1);
+}
+
+.card:nth-child(4):hover{
+z-index:2;
+  transform: translateY(-20px) rotate(1deg) scale(1);
+}
+/* End of CSS for cards */
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
